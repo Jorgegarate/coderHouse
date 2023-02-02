@@ -1,16 +1,23 @@
 import { useState } from 'react'
 import './App.css'
-import Menu from './components/Menu/Menu.jsx'
-import ComponentsContainer from './components/ComponentsContainer/ComponentsContainer.jsx';
-
+import Header from './components/Header/Header';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Footer from './components/Footer/Footer';
 
 function App() {
-  return (
-    <>
-    <Menu/>
-    <ComponentsContainer />
-    </>
-    )
-}
+    return (
+        <>
+            <Header />
+            <ItemListContainer>
+            <div>pantalon</div>
+            <div>camisa</div>
+            <div>gorro</div>
+            </ItemListContainer>
 
+            <Footer />
+
+        </>
+    )
+
+}
 export default App
